@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Task var,let and const</title>
+        <script src="main.js"></script>
+        
+    
+    
+    </head>
+
+    <body>
+        <center>
+         <h1>FAMOUS CRICKETERS</h1>
+            <h2>Click On the image buttons to see the different images</h2>
+            
+                <img id="cricketers" src="kapil.jpeg">
+            <br>
+            <br>
+                <button onclick="changeimage('kapil.jpeg')">image1</button>
+                <button onclick="changeimage('sachin.jpeg')">image2</button>
+                <button onclick="changeimage('yuvraj.jpeg')">image3</button>
+                <button onclick="changeimage('new dhoni.jpeg')">image4</button>
+                <button onclick="changeimage('virat new.jpeg')">image5</button>
+                <button onclick="changeimage('kl rahul.jpeg')">image6</button>
+                <button onclick="changeimage('jadeja.jpeg')">image7</button>
+            
+            
+            <p>NOTE:To See the assign and reassin values rightclick and inspect the code and then console</p>
+                
+ </center>
+      
+ </body>
+    <script>
+                function changeimage(fileName){
+                 var img = document.getElementById("cricketers");
+                    img.setAttribute("src",fileName);
+                }
+            
+            
+            
+            </script>
+           
+    
+    <style>
+        body{
+            background: linear-gradient(#faf62a.0%,#333205 100%);
+  }
+        h1{
+            background-color: black;
+            color: azure;
+            font-size: 40px;
+        }
+        img{
+            width: 800px;
+            height: 500px;
+            border: 5px double black; 
+        }
+        p{
+            color: azure;
+        }
+ </style>
+
+</html>
